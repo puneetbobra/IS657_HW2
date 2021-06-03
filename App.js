@@ -1,21 +1,42 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { View, StatusBar } from "react-native";
+
+import Box from './box';
+import styles from './styles';
+import Row from './row';
+import Column from './column';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <StatusBar hidden={false} />
+      <Row>
+      <Column>
+        <Box> Child </Box> 
+        <Box> Child </Box> 
+        <Box> Child </Box> 
+      </Column>
+      </Row>
+
+      <Column>
+      <Row>
+        <Box> Child </Box>
+        <Box> Child </Box>
+        <Box> Child </Box>
+      </Row>
+      </Column>
     </View>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+/*
+
+
+/*
+      <View style = {styles.boxColumn}> 
+      <Text style = {styles.boxText} > Column </Text>
+      </View>
+      <View style = {styles.boxRow}> 
+      <Text style = {styles.boxText} > Row </Text>
+      </View>      
+      */
