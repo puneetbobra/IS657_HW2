@@ -9,22 +9,22 @@ import Column from './column';
 export default function App() {
   return (
     <View style={styles.container}>
-      <StatusBar hidden={false} />
-      <Row>
+      <StatusBar hidden={false} />      
+      
+            
       <Column>
         <Box> Child </Box> 
         <Box> Child </Box> 
         <Box> Child </Box> 
       </Column>
-      </Row>
-
-      <Column>
+      
+     
       <Row>
         <Box> Child </Box>
         <Box> Child </Box>
         <Box> Child </Box>
       </Row>
-      </Column>
+      
     </View>
   );
 }

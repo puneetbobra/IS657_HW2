@@ -22,16 +22,25 @@ export default StyleSheet.create({
     },
     boxColumn: {
         height: 500,
-        width: 200,
+        width: 250,
         borderWidth: 1,
         broderStyle: "dashed",        
-        borderColor: "black",             
+        borderColor: "black",
+        backgroundColor: "gray",
+        justifyContent: 'space-around',
+        alignItems: 'center',
+        marginLeft: 30,
+        marginTop: 80,             
     },
     boxRow: {
-        height: 100,
-        width: 500,
+        height: 200,
+        width: 800,
         borderWidth: 1,
+        flexDirection: 'row',
+        backgroundColor: "gray",
+        justifyContent: 'space-around',
         broderStyle: "dashed",        
+        alignItems: 'center',
         borderColor: "black",
     },
     box: {
@@ -51,13 +60,13 @@ export default StyleSheet.create({
     row: {
         flex: 1,
         flexDirection: 'row',
-        justifyContent: 'space-around',                
+        justifyContent: 'space-around',
     },
     column: {
         flex: 1,
         flexDirection: 'column',        
         justifyContent: 'space-around',
-        alignItems: 'justified'
+        alignItems: 'flex-start'
     }
     }
   );

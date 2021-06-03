@@ -4,7 +4,9 @@ import { View } from "react-native";
 import styles from "./styles";
 
 export default function row({ children }) {
-  return <View style={styles.row}>{children}</View>;
+  return <View style={styles.row}>
+          <View style={styles.boxRow}>{children} Row </View>
+          </View>
 }
 
 row.propTypes = {

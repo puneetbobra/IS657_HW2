@@ -4,7 +4,10 @@ import { View } from "react-native";
 import styles from "./styles";
 
 export default function column({ children }) {
-  return <View style={styles.column}>{children}</View>;
+  return <View style={styles.column}>
+          <View style={styles.boxColumn}>{children} Column</View>  
+          </View>  
+  ;
 }
 
 column.propTypes = {
