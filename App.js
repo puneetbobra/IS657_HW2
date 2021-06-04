@@ -10,8 +10,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <StatusBar hidden={false} />      
-      
-            
+                   
       <Column>
         <Box> Child </Box> 
         <Box> Child </Box> 

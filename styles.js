@@ -9,10 +9,10 @@ export default StyleSheet.create({
       borderWidth: 3,
       borderColor: "black",
       alignItems: 'left',
-      marginTop: 10,
-      marginLeft: 10,
-      marginRight: 10,
-      marginBottom: 10,
+      marginTop: 40,
+      marginLeft: 575,
+      marginRight: 575,
+      marginBottom: 40,
       ...Platform.select({
           ios: {paddingTop: 15},
           ios: {paddingLeft: 20},
@@ -22,7 +22,7 @@ export default StyleSheet.create({
     },
     boxColumn: {
         height: 500,
-        width: 250,
+        width: 300,
         borderWidth: 1,
         broderStyle: "dashed",        
         borderColor: "black",
@@ -30,11 +30,19 @@ export default StyleSheet.create({
         justifyContent: 'space-around',
         alignItems: 'center',
         marginLeft: 30,
-        marginTop: 80,             
+        marginTop: 130,        
+    },
+    boxColumnText: {
+        color: 'black',
+        fontWeight: 'bold',
+        position: 'absolute',
+        top: 15,
+        left: 10,
+        fontSize: 24,
     },
     boxRow: {
         height: 200,
-        width: 800,
+        width: 700,
         borderWidth: 1,
         flexDirection: 'row',
         backgroundColor: "gray",
@@ -42,6 +50,15 @@ export default StyleSheet.create({
         broderStyle: "dashed",        
         alignItems: 'center',
         borderColor: "black",
+        marginBottom: 20,        
+    },
+    boxRowText: {
+        color: 'black',
+        fontWeight: 'bold',
+        position: 'absolute',
+        top: 10,
+        left: 10,
+        fontSize: 24,
     },
     box: {
         height: 100,
@@ -51,23 +68,27 @@ export default StyleSheet.create({
         backgroundColor: 'yellow',
         borderWidth: 1,
         broderStyle: "dashed",        
-        borderColor: "black",
+        borderColor: "black",        
     },
     boxText: {
         color: 'blue',
-        fontWeight: 'bold'
+        fontWeight: 'bold',
+        fontSize: 24,
     },
     row: {
         flex: 1,
         flexDirection: 'row',
         justifyContent: 'space-around',
+        alignItems: 'flex-end',
     },
     column: {
         flex: 1,
         flexDirection: 'column',        
         justifyContent: 'space-around',
-        alignItems: 'flex-start'
-    }
+        alignItems: 'flex-start',
+        textAlignVertical: 'top'
+    },
+    
     }
   );
 
